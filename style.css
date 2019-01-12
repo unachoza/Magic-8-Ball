@@ -1,3 +1,18 @@
 h1 {
     font-family: 'Cinzel', serif;
 }
+h4 {
+    font-family: 'Cinzel', serif;
+}
+img {
+    animation: shake 3s ;
+    
+}
+
+@keyframes shake {
+    0%   { left:20px; top:200px;}
+    25%  { left:20px; top:220px;}
+    50%  { left:15px; top:200px;}
+    75%  { left:30px; top:200px;}
+    100% { left:16px; top:200px;}
+}
