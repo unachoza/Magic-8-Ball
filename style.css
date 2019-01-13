@@ -4,12 +4,24 @@ h1 {
 h4 {
     font-family: 'Cinzel', serif;
     justify-content: center;
+    font-size: 9px;
 }
 #frame-1 {
-    
     animation-name: shake;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-delay: 1s;
+    visibility: visible;
+    z-index: 0;
+}
+#frame-2 {
+    visibility: visible;
+    z-index: -1;
+}
+
+#frame-3 {
+    visibility: visible;
+    z-index: -2;
+
 }
 
 button {
@@ -22,7 +34,6 @@ button {
 .answer{
     justify-content: center;
 }
-
 
 @keyframes shake {
 
