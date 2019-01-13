@@ -3,16 +3,73 @@ h1 {
 }
 h4 {
     font-family: 'Cinzel', serif;
+    justify-content: center;
 }
-img {
-    animation: shake 3s ;
+#frame-1 {
     
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-delay: 1s;
 }
 
+button {
+    visibility: visible;
+}
+.answer-container{
+    height: 20px;
+    width: 20px;
+}
+.answer{
+    justify-content: center;
+}
+
+
 @keyframes shake {
-    0%   { left:20px; top:200px;}
-    25%  { left:20px; top:220px;}
-    50%  { left:15px; top:200px;}
-    75%  { left:30px; top:200px;}
-    100% { left:16px; top:200px;}
+
+    0% {
+        transform:rotate(0deg);
+        margin-left: 1%;
+        
+      }
+      10% {
+        transform:rotate(13deg);
+        margin-left: 1.5%;
+        
+      }
+      25% {
+        transform:rotate(20deg);
+        margin-left: 1%;
+       
+      }
+      40% {
+        transform:rotate(13deg);
+        margin-left: 1%;
+        
+      }
+      50% {
+        transform:rotate(0deg);
+        margin-left: 1%;
+       
+      }
+      60% {
+        transform:rotate(-13deg);
+        margin-left: .5%;
+       
+      }
+      75% {
+        transform:rotate(-20deg);
+        margin-left: 1%;
+       
+      }
+      90% {
+        transform:rotate(-13deg);
+        margin-left: 1%;
+        margin-top:1%;
+      }
+      100% {
+        transform:rotate(0deg);
+        margin-left: 1%;
+       
+      }
+    
 }
