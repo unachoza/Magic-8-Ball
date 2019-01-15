@@ -12,11 +12,16 @@
        <h4>(for ideal results, phrase your question to be well recieved by a "yes" / "no" response)</h4> 
     </header>
     <Main>
+        <form onchange="handleSubmit()">
+            <label for="fname">Ask Your Question</label>
+            <input type="text" id="question" value="">
+            <!-- <input type="text" value=""> -->
+        </form>
         <div class="answer-ball-container">
-        <img class="ball" id="frame-1" onclick="magicFunction()" src="https://res.cloudinary.com/dh41vh9dx/image/upload/c_scale,w_600/v1547514978/frame-1.png"/>
-            <div class="answer-container">
-                <h4 class="displayAnswer"></h4>
-            </div>
+            <img class="ball" id="frame-1" onclick="magicFunction()" src="https://res.cloudinary.com/dh41vh9dx/image/upload/c_scale,w_600/v1547514978/frame-1.png"/>
+                <div class="answer-container">
+                    <h4 class="answer-container displayAnswer"></h4>
+                </div>
             <img class="ball" id="frame-2" src="https://res.cloudinary.com/dh41vh9dx/image/upload/c_scale,w_600/v1547514938/frame-2.png"/>
         </div>
        

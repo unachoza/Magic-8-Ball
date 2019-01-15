@@ -59,8 +59,27 @@ function magicFunction (){
       }
     console.log('showing')
     displayAnswer.innerHTML = answer
-    frame1.style.visibility = "hidden"
+    setInterval('frame1.style.opacity = 0', 2000)
+    
     }
+
+    function handleSubmit(){
+        console.log("submitted")
+        console.log("the value is " + value)
+    }
+//     function fadeOutEffect(){
+//  var fadeTarget = document.getElementById("target");
+//  var fadeEffect = setInterval(function() {
+//   if (fadeTarget.style.opacity < 0.1)
+//   {
+//    clearInterval(fadeEffect);
+//   }
+//   else
+//   {
+//    fadeTarget.style.opacity -= 0.1;
+//   }
+//  }, 200);
+// }
 
 let userQuestion = 'Should I go to the grocery store today?'
 let num =  Math.floor(Math.random() * 7)
