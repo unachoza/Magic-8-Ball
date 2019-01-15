@@ -111,7 +111,7 @@ a:hover{
 .answer-container{
     position: absolute;
     margin-left: 109px;
-    margin-top: 72px;
+    margin-top: 80px;
     z-index: -1;
     height: 20px;
     width: 15px;
@@ -124,6 +124,8 @@ a:hover{
     font-size: 9px;
     width: 50px;
     display: flex;
+    margin-left: 219px;
+    margin-top: 146px;
     text-align: center;
     z-index: -1;
     position: absolute;
@@ -232,3 +234,35 @@ textarea.materialize-textarea:focus:not([readonly])+label{
     border-bottom: 1px solid black !important;
     box-shadow: 0 1px 0 0 black !important;
   }
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+h1{
+    width: 80vw;
+    font-size: 50px;
+    margin-top: 150px;
+}
+h4{
+    font-size: 35px;
+    width: 70vw;
+}
+img{
+    height: 43vh;
+    width: 85vw;
+    top: 40vh;
+    left: 9vw;
+}
+input{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    width:400px;
+    font-family: 'Cinzel', serif;
+}
+button {
+    width: 300px;
+    height: 180px;
+   }
+
+}
