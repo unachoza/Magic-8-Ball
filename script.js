@@ -59,7 +59,7 @@ function magicFunction (){
       }
     console.log('showing')
     displayAnswer.innerHTML = answer
-    setInterval('frame1.style.opacity = 0', 2000)
+    setInterval('frame1.style.opacity = 0', 1000)
     
     }
 

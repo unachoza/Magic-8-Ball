@@ -3,6 +3,7 @@
   <head>
         <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
         <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <meta charset="UTF-8">
     <title>Magic 8 Ball </title>
   </head>
@@ -13,19 +14,26 @@
     </header>
     <Main>
         <form onchange="handleSubmit()">
-            <label for="fname">Ask Your Question</label>
-            <input type="text" id="question" value="">
-            <!-- <input type="text" value=""> -->
+            <div class="input-field form-group">
+                <input id="question" class="active validate form-control" type="text" placeholder="Ask Your Question" autocomplete="off" value="">
+                <label class="mat-label">
+                    <!-- <span class="black-text" place>Ask Your Question</span> -->
+                </label>
+            </div>
+           
         </form>
         <div class="answer-ball-container">
             <img class="ball" id="frame-1" onclick="magicFunction()" src="https://res.cloudinary.com/dh41vh9dx/image/upload/c_scale,w_600/v1547514978/frame-1.png"/>
                 <div class="answer-container">
                     <h4 class="answer-container displayAnswer"></h4>
                 </div>
-            <img class="ball" id="frame-2" src="https://res.cloudinary.com/dh41vh9dx/image/upload/c_scale,w_600/v1547514938/frame-2.png"/>
+            <img class="ball" id="frame-2" src="https://res.cloudinary.com/dh41vh9dx/image/upload/v1547572132/frame-3.png"/>
+            <!-- <img class="ball" id="frame-3" 
+            src="https://res.cloudinary.com/dh41vh9dx/image/upload/v1547571755/frame-3.png"/> -->
         </div>
        
     </Main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
   <script src="script.js"></script>
   </body>
 </html>

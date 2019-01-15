@@ -19,22 +19,25 @@ h4 {
 }
 #frame-1 {
     position: absolute;
-    visibility: visible;
+    /* visibility: visible; */
     opacity: 1;
     z-index: 0; 
 }
 
 #frame-1.active{
     animation-name: shake;
-    animation-duration: .8s;
+    animation-duration: 1s;
     animation-delay: .25s; 
-    visibility: visible;
+    /* visibility: visible; */
     z-index: 0;
 }
 #frame-2 {
     position: absolute;
     visibility: visible;
     z-index: -2;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 1s; 
 }
 .answer-ball-container{
     height: 200px;
@@ -43,6 +46,8 @@ h4 {
     margin: 0 auto;
 }
 input{
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     width:400px;
     font-family: 'Cinzel', serif;
@@ -56,7 +61,7 @@ form {
 }
 #frame-3 {
     visibility: visible;
-    /* z-index: -2; */
+    z-index: -3;
 }
 img {
     height: 340px;
@@ -98,7 +103,15 @@ button:hover{
         margin-left: -1%;
         opacity: 1
       }
-      20% {
+      15% {
+        margin-left: 2%;
+        opacity: 1
+      }
+      22% {
+        margin-left:-1%;
+        opacity: 1
+      }
+      27% {
         margin-left: 2%;
         opacity: 1
       }
@@ -134,7 +147,53 @@ button:hover{
       }
     
 }
+#textarea1{
+    color: black;
+    width: 500px;
+}
+.input-field {
+    color: #000;
+    
+    /* height: 300px;; */
+    /* size: 500px; */
+    /* font-size: 500px; */
+  }
+  .materialize-textarea{
+    color: black;
+  }
+@keyframes fadeIn {
+    0% {opacity: .85;}
+    /* 60% {opacity: .9} */
+    100% {opacity: 1;}
+}
 /* @keyframes fadeOut {
     0% {opacity: 1;}
     100% {opacity: 0;}
  } */
+ textarea:focus{
+
+     color: black;
+ }
+ /* label{
+     color: red
+ }
+ label:active{
+     color: red
+ }
+ label:focus{
+    color: red
+} */
+h1.materialize-textarea{
+    margin-left: auto;
+    margin-right: auto;
+}
+textarea.materialize-textarea:focus:not([readonly])+label{
+    color:red
+}
+/* label.active {
+    color: royalblue;
+  } */
+  input:focus {
+    border-bottom: 1px solid black !important;
+    box-shadow: 0 1px 0 0 black !important;
+  }
