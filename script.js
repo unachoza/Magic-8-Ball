@@ -62,6 +62,11 @@ function magicFunction (){
     setInterval('frame1.style.opacity = 0', 1000)
     
     }
+    function reloading (){
+        console.log('refresh!')
+        location.reload();
+
+    }
 
     // function handleSubmit(){
     //     console.log("submitted")

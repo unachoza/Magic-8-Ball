@@ -10,16 +10,22 @@
   <body>
     <header>
         <h1>The Magic 8 Ball Can Answer Questions About Your Future. Ask Away! <br/></h1>
-       <h4>Instructions: Enter your question and click the Magic 8 Ball for your response(for ideal results, phrase your question to be well recieved by a "yes" / "no" response).</h4> 
+       <h4>Instructions: Enter your question and click the Magic 8 Ball 
+           <!-- for your response(for ideal results, phrase your question to be well recieved by a "yes" / "no" response). -->
+        </h4> 
     </header>
     <Main>
-        <form  >
-            <!-- <div class="input-field form-group"> -->
-                <input id="question"  type="text" placeholder="Ask Your Question" autocomplete="off" value="">
+        <div class="form-container">
+                <form  onSubmit="return false">
+                        <!-- <div class="input-field form-group"> -->
+                            <input id="question"  placeholder="Ask Your Question" autocomplete="off"  >
+                   
+
+                </form>
+                <button onclick="reloading();">Ask Again</button>
                 
-            </div>
-           
-        </form>
+        </div>
+        
         <!-- <div id="display"></div> -->
         <div class="answer-ball-container">
             <img class="ball" id="frame-1" onclick="magicFunction()" src="https://res.cloudinary.com/dh41vh9dx/image/upload/c_scale,w_600/v1547514978/frame-1.png"/>
@@ -27,10 +33,10 @@
                     <h4 class="answer-container displayAnswer"></h4>
                 </div>
             <img class="ball" id="frame-2" src="https://res.cloudinary.com/dh41vh9dx/image/upload/v1547572132/frame-3.png"/>
+            
             <!-- <img class="ball" id="frame-3" 
             src="https://res.cloudinary.com/dh41vh9dx/image/upload/v1547571755/frame-3.png"/> -->
         </div>
-       
     </Main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
   <script src="script.js"></script>
