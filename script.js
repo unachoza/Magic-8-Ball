@@ -41,6 +41,11 @@ function magicFunction (){
         answer = "nope"
         console.log("answer is : " + answer)
         break;
+        case 8:
+        console.log('Without a doubt')
+        answer = "Without a doubt"
+        console.log("answer is : " + answer)
+        break;
           case 6:
         console.log('My sources say no')
         answer = "My sources say no"
@@ -54,6 +59,31 @@ function magicFunction (){
         case 1:
         console.log('Signs point to yes')
         answer = "Signs point to yes"
+        console.log("answer is : " + answer)
+        break;
+        case 9:
+        console.log('Yes - definitely.')
+        answer = "Yes - definitely."
+        console.log("answer is : " + answer)
+        break;
+        case 10:
+        console.log('Better not tell you now.')
+        answer = "Better not tell you now."
+        console.log("answer is : " + answer)
+        break;
+        case 11:
+        console.log('Concentrate and ask again')
+        answer = "Concentrate and ask again"
+        console.log("answer is : " + answer)
+        break;
+        case 12:
+        console.log('Very doubtful')
+        answer = "Very doubtful"
+        console.log("answer is : " + answer)
+        break;
+        case 13:
+        console.log(' Don\'t count on it')
+        answer = " Don\'t count on it"
         console.log("answer is : " + answer)
         break;
       }
@@ -91,7 +121,7 @@ function clicked() {
         console.log('yes yes no')
     }
 
-let num =  Math.floor(Math.random() * 7)
+let num =  Math.floor(Math.random() * 12)
 let randomNumber = Math.floor(num)
 let eightBall = ''
 
