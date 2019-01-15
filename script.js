@@ -59,6 +59,7 @@ function magicFunction (){
       }
     console.log('showing')
     displayAnswer.innerHTML = answer
+    frame1.style.visibility = "hidden"
     }
 
 let userQuestion = 'Should I go to the grocery store today?'

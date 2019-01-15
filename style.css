@@ -9,9 +9,10 @@ h4 {
 #frame-1 {
     /* animation-name: shake;
     animation-duration: .5s;
-    animation-delay: 1s; 
+    animation-delay: 1s; */
+    position: absolute;
     visibility: visible;
-    z-index: 0; */
+    z-index: 0; 
 }
 #frame-1.active{
     /* visibility: hidden; */
@@ -24,9 +25,14 @@ h4 {
 #frame-2 {
     position: absolute;
     visibility: visible;
-    z-index: -1;
+    z-index: -2;
 }
-
+.answer-ball-container{
+    height: 900px;
+    width: 1200px;
+    top: 400px;
+    margin-left:300px;
+}
 #frame-3 {
     visibility: visible;
     z-index: -2;
@@ -38,6 +44,10 @@ h4 {
     animation-delay: 1s;
 
 }
+img {
+    height: 800px;
+    width: 1100px;
+}
 
 button {
     visibility: visible;
@@ -46,11 +56,19 @@ button:hover{
     transform: scale(3)
 }
 .answer-container{
+    position: absolute;
+    margin-left: 515px;
+    margin-top: 320px;
+    z-index: -1;
     height: 20px;
     width: 20px;
 }
 .answer{
     justify-content: center;
+}
+.displayAnswer{
+    color: white;
+    font-size: 20px;
 }
 
 @keyframes shake {
