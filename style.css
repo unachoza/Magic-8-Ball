@@ -62,6 +62,21 @@ button {
     background: grey;
     border-radius: 3pxl
 }
+a {
+   
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+}
+a:visited 
+{
+   
+    text-decoration: none; 
+    decoration: none; 
+}
 form {
     font-family: 'Cinzel', serif;
     font-size: 30px;
@@ -85,8 +100,13 @@ img {
 button {
     visibility: visible;
 }
-/* button:hover{
-    transform: scale(3)
+main{
+    height: 400px;
+   
+}
+a:hover{
+    transform: scale(1.7);
+    color: rgb(36, 36, 131);
 } */
 .answer-container{
     position: absolute;
