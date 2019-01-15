@@ -63,25 +63,29 @@ function magicFunction (){
     
     }
 
+    // function handleSubmit(){
+    //     console.log("submitted")
+    //     console.log("the value is " + value)
+    // }
+
+    var userQuestion = document.getElementById("question").value
+
     function handleSubmit(){
         console.log("submitted")
-        console.log("the value is " + value)
-    }
-//     function fadeOutEffect(){
-//  var fadeTarget = document.getElementById("target");
-//  var fadeEffect = setInterval(function() {
-//   if (fadeTarget.style.opacity < 0.1)
-//   {
-//    clearInterval(fadeEffect);
-//   }
-//   else
-//   {
-//    fadeTarget.style.opacity -= 0.1;
-//   }
-//  }, 200);
-// }
+        console.log("the value is " + userQuestion)
+        var input_value = document.getElementById('question').value;
+    document.getElementById('display').innerHTML = input_value;
 
-let userQuestion = 'Should I go to the grocery store today?'
+
+    }
+function clicked() {
+    var input_value = document.getElementById('data').value;
+    document.getElementById('display').innerHTML = input_value;
+}
+    function myyFunction(){
+        console.log('yes yes no')
+    }
+
 let num =  Math.floor(Math.random() * 7)
 let randomNumber = Math.floor(num)
 let eightBall = ''
