@@ -4,6 +4,17 @@ var displayAnswer = document.querySelector(".displayAnswer")
 var frame1 = document.querySelector("#frame-1")
 
 
+document.querySelector("#frame-1").addEventListener('click', function(){
+    console.log('clicked')
+    document.querySelector("#frame-1").classList.add('active')
+})
+function addActive(){
+    console.log('clicked')
+    document.querySelector("#frame-1").classList.add('.active')
+    
+}
+// button8.classList.add("active")
+
 function magicFunction (){
     console.log("Will I have time to rest in between chores?")
     button.style.visibility = 'hidden'

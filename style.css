@@ -7,13 +7,22 @@ h4 {
     font-size: 9px;
 }
 #frame-1 {
+    /* animation-name: shake;
+    animation-duration: .5s;
+    animation-delay: 1s; 
+    visibility: visible;
+    z-index: 0; */
+}
+#frame-1.active{
+    /* visibility: hidden; */
     animation-name: shake;
     animation-duration: .5s;
-    animation-delay: 1s;
+    animation-delay: .25s; 
     visibility: visible;
     z-index: 0;
 }
 #frame-2 {
+    position: absolute;
     visibility: visible;
     z-index: -1;
 }
@@ -23,9 +32,18 @@ h4 {
     z-index: -2;
 
 }
+.ball:active {
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-delay: 1s;
+
+}
 
 button {
     visibility: visible;
+}
+button:hover{
+    transform: scale(3)
 }
 .answer-container{
     height: 20px;
