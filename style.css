@@ -7,7 +7,12 @@ h1 {
     font-family: 'Cinzel', serif;
     font-size: 40px;
 }
+span#mySpan {
+    font-size: 50px;
+    vertical-align:baseline;
+}
 h4 {
+   
     display: flex;
     text-align: center;
     width: 700px;
@@ -16,6 +21,7 @@ h4 {
     font-family: 'Cinzel', serif;
     justify-content: center;
     font-size: 15px;
+    
 }
 #frame-1 {
     position: absolute;
@@ -53,14 +59,20 @@ input{
     font-family: 'Cinzel', serif;
 }
 button {
+    font-size: 13px;
     padding: 5px;
-    margin-top: 7px;
     margin-left: 10px;
-    height: 35px;
-    width: 70px;
+    height: 50px;
+    width: 80px;
     color: white;
     background: grey;
-    border-radius: 3pxl
+    border: black solid 2px;
+    border-radius: 5px;
+    visibility: hidden;
+
+}
+button:active {
+
 }
 a {
    
@@ -97,9 +109,7 @@ img {
     height: 340px;
     width: 480px;
 }
-button {
-    visibility: visible;
-}
+
 main{
     height: 400px;
    

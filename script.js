@@ -1,5 +1,5 @@
 
-const button8 = document.getElementById("button")
+const button = document.querySelector("button")
 var displayAnswer = document.querySelector(".displayAnswer")
 var frame1 = document.querySelector("#frame-1")
 
@@ -87,9 +87,11 @@ function magicFunction (){
         console.log("answer is : " + answer)
         break;
       }
-    console.log('showing')
+    // console.log('showing')
     displayAnswer.innerHTML = answer
     setInterval('frame1.style.opacity = 0', 1000)
+    // setInterval('button.style.visibility = visible', 500);
+    button.style.visibility = "visible"
     
     }
     function reloading (){
@@ -98,10 +100,10 @@ function magicFunction (){
 
     }
 
-    // function handleSubmit(){
-    //     console.log("submitted")
-    //     console.log("the value is " + value)
-    // }
+    function handleSubmit(){
+        console.log("submitted")
+        console.log("the value is " + value)
+    }
 
     var userQuestion = document.getElementById("question").value
 
