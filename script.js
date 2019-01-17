@@ -102,6 +102,88 @@ function magicFunction (){
         location.reload();
 
     }
+    function shake (){
+        document.getElementById('frame-1').className = "shake"
+        console.log("Will I have time to rest in between chores?")
+        switch(num){
+            case 0: 
+            console.log('It is certain')
+            answer = "It is certain"
+            console.log("answer is : " + answer)
+            break;
+            case 2:
+            console.log('It is decidedly so')
+            answer = "It is decidedly so"
+            console.log("answer is : " + answer)
+            break;
+            case 3:
+            console.log('Reply hazy try again')
+            answer = "Reply hazy try again"
+            console.log("answer is : " + answer)
+            break;
+            case 4:
+            console.log('Cannot predict now')
+            answer = "Cannot predict now"
+            console.log("answer is : " + answer)
+            break;
+            case 5:
+            console.log('nope')
+            answer = "nope"
+            console.log("answer is : " + answer)
+            break;
+            case 8:
+            console.log('Without a doubt')
+            answer = "Without a doubt"
+            console.log("answer is : " + answer)
+            break;
+              case 6:
+            console.log('My sources say no')
+            answer = "My sources say no"
+            console.log("answer is : " + answer)
+            break;
+            case 7:
+            console.log('Outlook not so good')
+            answer = "Outlook not so good"
+            console.log("answer is : " + answer)
+            break;
+            case 1:
+            console.log('Signs point to yes')
+            answer = "Signs point to yes"
+            console.log("answer is : " + answer)
+            break;
+            case 9:
+            console.log('Yes - definitely.')
+            answer = "Yes - definitely."
+            console.log("answer is : " + answer)
+            break;
+            case 10:
+            console.log('Better not tell you now.')
+            answer = "Better not tell you now."
+            console.log("answer is : " + answer)
+            break;
+            case 11:
+            console.log('Concentrate and ask again')
+            answer = "Concentrate and ask again"
+            console.log("answer is : " + answer)
+            break;
+            case 12:
+            console.log('Very doubtful')
+            answer = "Very doubtful"
+            console.log("answer is : " + answer)
+            break;
+            case 13:
+            console.log(' Don\'t count on it')
+            answer = " Don\'t count on it"
+            console.log("answer is : " + answer)
+            break;
+          }
+        // console.log('showing')
+        displayAnswer.innerHTML = answer
+        setInterval('frame1.style.opacity = 0', 1000)
+        ask.style.visibility = "visible"
+        submit.style.visibility = "hidden"
+        
+    }
 
     var userQuestion = document.getElementById("question").value
 

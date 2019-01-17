@@ -29,14 +29,19 @@ h4 {
     opacity: 1;
     z-index: 0; 
 }
-
-#frame-1.active{
+.shake {
     animation-name: shake;
     animation-duration: 1s;
     animation-delay: .25s; 
-    /* visibility: visible; */
-    z-index: 0;
 }
+
+/* #frame-1.active{
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-delay: .25s; 
+    visibility: visible;
+    z-index: 0;
+} */
 #frame-2 {
     position: absolute;
     visibility: visible;
