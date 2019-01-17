@@ -2,6 +2,9 @@
 const button = document.querySelector("button")
 var displayAnswer = document.querySelector(".displayAnswer")
 var frame1 = document.querySelector("#frame-1")
+var form = document.querySelector('form')
+var ask = document.getElementById('ask')
+var submit = document.getElementById('submit')
 
 
 document.querySelector("#frame-1").addEventListener('click', function(){
@@ -100,18 +103,19 @@ function magicFunction (){
 
     }
 
-    function handleSubmit(){
-        console.log("submitted")
-        console.log("the value is " + value)
-    }
-
     var userQuestion = document.getElementById("question").value
 
     function handleSubmit(){
         console.log("submitted")
         console.log("the value is " + userQuestion)
+        form.style.visibility = "hidden"
+        form.style.display = "none"
+        submit.style.visibility = "hidden"
+        ask.style.visibility = "visible"
+        
         var input_value = document.getElementById('question').value;
-    document.getElementById('display').innerHTML = input_value;
+        console.log(input_value)
+    document.getElementById('displayQuestion').innerHTML = input_value;
 
 
     }
