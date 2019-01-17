@@ -274,18 +274,23 @@ textarea.materialize-textarea:focus:not([readonly])+label{
   and (-webkit-min-device-pixel-ratio: 2) { 
 h1{
     width: 80vw;
-    font-size: 50px;
-    margin-top: 150px;
+    font-size: 65px;
+    margin-top: 15vh;
 }
 h4{
     font-size: 35px;
     width: 70vw;
 }
+.displayAnswer{
+    font-size: 20px;
+    margin-left: 230px;
+    margin-top: 283px;
+}
 img{
-    height: 43vh;
-    width: 85vw;
-    top: 40vh;
-    left: 9vw;
+    height: 46vh;
+    width: 95vw;
+    top: 45vh;
+    left: 4vw;
 }
 input{
     margin-left: auto;
@@ -294,9 +299,23 @@ input{
     width:400px;
     font-family: 'Cinzel', serif;
 }
+#displayQuestion {
+    font-size: 65px;
+    margin-top: 35px
+     
+}
 button {
     width: 300px;
     height: 180px;
+    font-size: 35px;
    }
-
+.form-container{
+    margin-left: 20vw;
+}
+input {
+    height: 10vh;;
+}
+#submit{
+    width:600px;
+}
 }
