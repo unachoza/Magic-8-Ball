@@ -51,7 +51,12 @@ h4 {
     top: 400px;
     margin: 0 auto;
 }
+form {
+    visibility: visible;
+    
+}
 input{
+    visibility: visible;
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;
@@ -68,7 +73,7 @@ button {
     background: grey;
     border: black solid 2px;
     border-radius: 5px;
-    visibility: hidden;
+    /* visibility: hidden; */
 
 }
 button:active {
@@ -82,7 +87,7 @@ a {
     justify-content: center;
 }
 
-}
+
 a:visited 
 {
    
@@ -129,6 +134,14 @@ a:hover{
 .answer{
     justify-content: center;
 }
+#displayQuestion {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    height: 40px;
+    font-size: 30px;
+
+}
 .displayAnswer{
     color: rgba(248, 242, 242, 0.938);
     font-size: 9px;
@@ -139,6 +152,12 @@ a:hover{
     text-align: center;
     z-index: -1;
     position: absolute;
+}
+#ask{
+    visibility: hidden;
+}
+#submit {
+    visibility: visible ;
 }
 
 @keyframes shake {
