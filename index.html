@@ -17,13 +17,17 @@
         <div class="form-container">
                 <form  onSubmit="handleSubmit(); shake(); return false">
                         <!-- <div class="input-field form-group"> -->
-                            <input id="question"  placeholder="Ask Your Question" autocomplete="off"  >
+                            <input type='text' id="question"  placeholder="Ask Your Question" autocomplete="off"  >
                    
 
                 </form>
+                
                 <div id="displayQuestion"></div>
-                <button id="submit" onclick="handleSubmit(); shake()">Submit</button>
-                <button id="ask" onclick="reloading()">Ask Again</button>
+                <div class="button-container">
+                    <button id="submit" onclick="handleSubmit(); shake()">Submit</button>
+                    <button id="ask" onclick="reloading()">Ask Again</button>
+                </div>
+                
 
                 
                 
