@@ -363,3 +363,10 @@ footer{
 
 
 }
+@media only screen and (max-width: 950px) {
+  a {
+    margin-top: 10px;
+  }
+
+
+}
